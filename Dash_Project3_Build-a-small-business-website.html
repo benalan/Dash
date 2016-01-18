@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<head>
+  <script src="/assets/jquery.js"></script>
+  <link href='https://fonts.googleapis.com/css?family=Unica+One' rel='stylesheet' type='text/css'>
+  <style>
+    body {
+      font-family: helvetica, sans-serif;
+      margin: 0 auto;
+      max-width: 700px;
+      background: #c1b39e;
+    }
+    div {
+      height: 500px;
+      background-size: cover;
+      position: relative;
+      margin: 40px 0 0 0;
+    }
+    h1 {
+      font-family: 'Unica One', cursive;
+      text-align: center;
+      font-size: 75px;
+      color: #fff;
+      margin: 60px 0 10px 0;
+    }
+    h2 {
+      font-family: 'Unica One', cursive;
+      font-size: 28px;
+      text-align: center;
+      color: #fff;
+      margin: 0px 0 70px 0;
+    }
+    p {
+      color: rgba(255,255,255,1);
+      background: black;
+      background: linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+      background: -webkit-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+      background: -moz-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+      padding: 10px;
+      line-height: 28px;
+      text-align: justify;
+      position: absolute;
+      bottom: 0;
+      margin: 0;
+      height: 30px;
+      transition: height .5s;
+      -webkit-transition: height .5s;
+      -moz-transition: height .5s;
+    }
+    small {
+      opacity: 0;
+    }
+    .show-description p {
+      height: 150px;
+    }
+    .show-description small {
+      opacity: 1;
+    }
+    .first{
+      background-image: url("http://www.readymaderc.com/store/images/BLACKOUT-MINI-H-01.jpg");
+    }
+    .second{
+      background-image: url("http://www.minihquad.com/media/catalog/product/cache/1/image/1600x/040ec09b1e35df139433887a97daa66f/i/m/img_6006_fixed.jpg");
+    }
+    .dessert{
+      background-image: url("http://cdn.shopify.com/s/files/1/0593/2821/products/carbon_250_1024x1024.jpg?v=1409290164");
+    }
+    .price {
+      float: right;
+      color: f00;
+    }
+    @media (max-width: 500px) {
+      h1 {
+        font-size: 50px;
+        margin-top: 20px;
+        line-height: 40px;
+      }
+      h2 {
+        font-size: 20px;
+        margin: 20px 0 30px 0;
+      }
+      div {
+        margin: 20px 12px 0 12px;
+        height: 200px;
+      }
+      p {
+        font-size: 20px;
+        line-height: 24px;
+      }
+      small {
+        font-size: 16px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Fiber+Weave</h1>
+  <h2>quality carbon fiber products</h2>
+  <div class="first">
+    <p>Blackout Mini H Quad Frame <span class="price">$150</span><br />
+    <small>The Blackout Mini H Quad is a low weight Mini Sport FPV Quadcopter frame. The Mini H Quad was designed to make use of standard sized electronic equipment commonly used in RC. This allows the quadcopter to compete with larger quadcopters, while being smaller and agile ! For each frame set sold, $5 is donated back to the Open Pilot community ! Working on Mini Quadcopters requires a lot of soldering, wire shortening and creation of power distribution systems. This product requires a good knowledge of RC systems and is not recommended for beginners. </small>
+    </p>
+  </div>
+
+  <div class="second">
+    <p>Blackout Mini Spider Hex Frame w/ Power Distribution Board <span class="price">$220</span><br />
+    <small>The Blackout Mini Spider Hex is a low weight Mini Aerial Photography Hexacopter frame. The Mini Spider Hex is a full featured multirotor in a compact form. For each frame set sold, $5 is donated back to the Open Pilot community ! Working on Mini Hexacopters requires a lot of soldering, wire shortening and creation of power distribution systems. This product requires a good knowledge of RC systems and is not recommended for beginners.</small>
+    </p>
+  </div>
+  
+  <div class="dessert">
+    <p>QAV250 Mini-Quad <span class="price">$150</span><br />
+    <small>The Lumenier QAV250 Mini FPV Quadcopter Carbon Fiber Edition airframe has all the features of the standard QAV250 plus the added benefits of carbon fiber. The pure 3K carbon fiber material gives the airframe incredible strength while at the same time reducing the overall weight. The entire assembled kit weighs in at only 129g. The QAV250 is a symmetric 250mm size airframe that accommodates 5" props. The 250mm is measured motor shaft to motor shaft diagonally.</small>
+    </p>
+  </div>
+
+  <script>
+    $('div').on('click', function() {
+      $(this).toggleClass('show-description');
+    });
+  </script>
+
+</body>
